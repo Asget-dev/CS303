@@ -2,23 +2,23 @@
 /* eslint-disable no-unused-vars */
 "use strict";
 
-// function pow(x, n) {
-// 	return x ** n;
-// }
+function pow(x, n) {
+	return x ** n;
+}
 
-// function add2(n1, n2) {
-// 	return n1 + n2;
-// }
+function add2(n1, n2) {
+	return n1 + n2;
+}
 
-// function add(...args) {
-// 	let count = arguments.length;
-// 	let sum = 0;
-// 	for (let i=0; i<count; i++) {
-// 		sum += arguments[i];
-// 	}
+function add(...args) {
+	let count = arguments.length;
+	let sum = 0;
+	for (let i=0; i<count; i++) {
+		sum += arguments[i];
+	}
 
-// 	return sum;
-// }
+	return sum;
+}
 
 /*
 	Input: grades is an array of integers
@@ -31,13 +31,13 @@
 */
 function computeGrade(grades) {
   for (let i = 0; i < grades.length; i++) {
-    if (grades >= 90) {
+    if (grades[i] >= 90) {
       return "A";
-    } else if (grades >= 80) {
+    } else if (grades[i] >= 80) {
       return "B";
-    } else if (grades >= 70) {
+    } else if (grades[i] >= 70) {
       return "C";
-    } else if (grades >= 60) {
+    } else if (grades[i] >= 60) {
       return "D";
     } else {
       return "NC";
@@ -45,5 +45,5 @@ function computeGrade(grades) {
   }
 }
 
-// let x =  80;
-// console.log(computeGrade(x));
+let x =  [80,80,80];
+console.log(computeGrade(x));
