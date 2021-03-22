@@ -30,13 +30,13 @@ function add(...args) {
 	0 - 59   NC
 */
 function computeGrade(grades) {
-	if(grade >= 90){
+	if(grades >= 90){
 		return "A";
-	}else if(grade >= 80){
+	}else if(grades >= 80){
 		return "B";
-	}else if(grade >= 70){
+	}else if(grades >= 70){
 		return "C";
-	}else if(grade >= 60){
+	}else if(grades >= 60){
 		return "D";
 	}else{
 		return "NC";
