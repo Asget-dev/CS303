@@ -30,6 +30,7 @@ function add(...args) {
 	0 - 59   NC
 */
 function computeGrade(grades) {
+	
   for (let i = 0; i < grades.length; i++) {
     if (grades[i] >= 90) {
       return "A";
