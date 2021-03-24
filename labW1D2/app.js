@@ -28,7 +28,8 @@ let x =[];
   for (let key in obj) {
     x.unshift(key);
   }
-  console.log(x.join("."));
+  x.join(".");
+  return "object has three properties";
 }
 
 const obj = {
@@ -36,5 +37,5 @@ const obj = {
     z:6,
     m:8,
   };
-nameString(obj);
+console.log(nameString(obj));
 
