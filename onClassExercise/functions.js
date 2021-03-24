@@ -76,8 +76,7 @@ function reverseArray(arr){
 function reverseArrayInPlace(arr){
     let reverse = [];
     for(let num of arr){
-        reverse
-        .push(reverseArray(num));
+        reverse.push(reverseArray(num));
     }
     return reverse;
     //console.log(reverse);

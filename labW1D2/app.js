@@ -2,22 +2,38 @@
 /* eslint-disable no-unused-vars */
 "use strict";
 
+function nameString() {
+  let str = [];
 
-// See tests.js for behavior
-function nameString(obj) {
-  for (let key in obj) {
-    return false;
+  if (obj === undefined) {
+    return "No object passed";
+  } else if (obj === null) {
+    return "null argument";
+  } else {
+    for (let key in obj) {
+      str.push(key);
+    }
+    if (str.length == 0) {
+      return "object has no properties";
+    } else {
+      str.sort();
+      return str.join(".");
+    }
   }
-  return true;
 }
+// See tests.js for behavior
+// function nameString(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
 
-const obj2 = {
-};
-
-nameString(obj2);
+// const obj = {
+//     name: "a",
+// };
+// console.log(nameString(obj));
 // module.exports = {nameString};
-
-
 
 // function nameString(obj) {
 
@@ -33,19 +49,18 @@ nameString(obj2);
 //   };
 // console.log(nameString(obj));
 
-function nameString(obj) {
-let x =[];
-  for (let key in obj) {
-    x.unshift(key);
-  }x.sort();
-  let y =(x.join("."));
-  return y;
-}
+// function nameString(obj) {
+// let x =[];
+//   for (let key in obj) {
+//     x.unshift(key);
+//   }x.sort();
+//   let y =(x.join("."));
+//   return y;
+// }
 
-const obj = {
-    a:5,
-    z:6,
-    m:8,
-  };
-nameString(obj);
-
+// const obj = {
+//     a:5,
+//     z:6,
+//     m:8,
+//   };
+// nameString(obj);
