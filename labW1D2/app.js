@@ -9,16 +9,16 @@ function nameString(obj) {
 const obj = {};
 console.log(nameString(obj));
 
-function nameString(obj) {
+// function nameString(obj) {
 
-  for (let key in obj) {
-    key;
-    return "object has one property";
-  }
+//   for (let key in obj) {
+//     key;
+//     return "object has one property";
+//   }
   
-}
+// }
 
-const obj = {
-    a: 5,
-  };
-console.log(nameString(obj));
+// const obj = {
+//     a: 5,
+//   };
+// console.log(nameString(obj));
