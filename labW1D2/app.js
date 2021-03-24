@@ -2,12 +2,35 @@
 /* eslint-disable no-unused-vars */
 "use strict";
 
+
+
+
+
 // See tests.js for behavior
-// function nameString(obj) {
-//   return "object has no properties";
-// }
-// const obj = {};
-// console.log(nameString(obj));
+function nameString(obj) {
+  return "object has no properties";
+}
+
+const obj = {};
+console.log(nameString(obj));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function nameString(obj) {
 
@@ -23,19 +46,18 @@
 //   };
 // console.log(nameString(obj));
 
-function nameString(obj) {
-let x =[];
-  for (let key in obj) {
-    x.unshift(key);
-  }
-  x.join(".");
-  return "object has three properties";
-}
+// function nameString(obj) {
+// let x =[];
+//   for (let key in obj) {
+//     x.unshift(key);
+//   }x.sort();
+//   console.log(x.join("."));
+// }
 
-const obj = {
-    a:5,
-    z:6,
-    m:8,
-  };
-console.log(nameString(obj));
+// const obj = {
+//     a:5,
+//     z:6,
+//     m:8,
+//   };
+// nameString(obj);
 
