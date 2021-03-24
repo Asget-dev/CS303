@@ -4,16 +4,16 @@
 
 
 // See tests.js for behavior
-// function nameString(obj) {
-//   for (let key in obj) {
-//     return false;
-//   }
-//   return true;
-// }
+function nameString(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
 
-// const obj = {
-//     name: "a",
-// };
+const obj2 = {
+};
+
 // console.log(nameString(obj));
 // module.exports = {nameString};
 
