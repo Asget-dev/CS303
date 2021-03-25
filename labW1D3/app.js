@@ -49,7 +49,7 @@ function Person(name, country, grades) {
   this.grades = grades;
   // computeGrade;
 
-  this.computeGrade = function (grades) {
+  this.computeGrade = function () {
     let sum = 0;
     let result;
     for (let i = 0; i < this.grades.length; i++) {
