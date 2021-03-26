@@ -12,7 +12,7 @@ function nameString(obj) {
     else{
     let x = [];
     for (let key in obj) {
-      x.unshift(key);
+      x.push(key);
     }
     x.sort();
     let y = x.join(".");
