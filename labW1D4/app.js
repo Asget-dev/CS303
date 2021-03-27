@@ -61,17 +61,17 @@ function makePositive(array) {
 // removeZeros([3, 0, 0, 0, 5, 6, 0, 0, 7, 0]) returns [3, "*", 5, "*", 7, "*"];
 
 function removeZeros(array) {
-  let result = [];
+  let outPut = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i] !== array[i + 1]) {
-      result.push(array[i]);
+		outPut.push(array[i]);
     }
   }
-  for (let k = 0; k < result.length; k++) {
-    if (result[k] === 0) {
-      result[k] = "*";
+  for (let j = 0; j < outPut.length; j++) {
+    if (outPut[j] === 0) {
+		outPut[j] = "*";
     }
   }
 
-  return result;
+  return outPut;
 }
