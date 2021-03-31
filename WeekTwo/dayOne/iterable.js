@@ -1,4 +1,5 @@
 "use strict";
+//iterable means for of
 // object that can be used in for..of are called iterabe
 // Array, String are some built-in types
 
@@ -7,8 +8,8 @@ for (let i of arr) {
   console.log(i);
 }
 
-let name = "John Smith";
-for (let i of name){
+let namex = "John Smith";
+for (let i of namex){
     console.log(i);
 }
 
