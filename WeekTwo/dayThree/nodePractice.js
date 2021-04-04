@@ -9,15 +9,15 @@
 // console.log(n1);
 
 var Node =  {
-    value1: function(data, next=null){
+    getAge: function(){
         this.data = data;
         this.next = next; 
     }
 }
 
-class LinkedList = {
-    this.head = null,
-}
+// class LinkedList = {
+//     this.head = null,
+// }
 
 //const n1 = new Node(100);
 console.log(Node.value1);
