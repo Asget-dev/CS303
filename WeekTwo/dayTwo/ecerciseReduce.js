@@ -26,9 +26,3 @@ let students = [
     { name: 'Katie', grade: 90, courses:['cs303', 'cs477'] }
   ];
 
-//arrow function
-let total = students.filter(function(acc,item){
-    return acc + item.g[0][0];
-},0);
-
-console.log(total)

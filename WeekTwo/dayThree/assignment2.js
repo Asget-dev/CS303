@@ -14,10 +14,11 @@
 //   }
 // }
 // console.log(sum(100));
+
 node1 = {value :50, next: null};
 let head = {value: 10, next: node1};
 
-let addbeginning = {value:5};
+let addbeginning = {value:5 , next:head};
 addbeginning.next = head;
 console.log(head);
 
@@ -28,23 +29,25 @@ let linkedlink = {value:1};
 linkedlink.next = {value: 2};
 linkedlink.next.next = {value:3};
 linkedlink.next.next.next = {valude:4};
+console.log(linkedlink);
 linkedlink.next.next.next.next = null;
 console.log(linkedlink);
 
 // add in the begging and join the linkedlink
 let addbegging = {value:"beggning"};
 addbegging.next = linkedlink;
+console.log(addbegging);
 //same as the above
 // let addbegging = {value:"beggning",next: linkedlink};
-linkedlink = addbegging;
-console.log(linkedlink);
+// linkedlink = addbegging;
+// console.log(linkedlink);
 
 //remove from the middle and join linkedlink
-linkedlink.next = linkedlink.next.next;
-//same us
-let node1 = linkedlink.next.next;
-linkedlink.next = node1;
-console.log(linkedlink);
-node1 = null;
-console.log(linkedlink);
+// linkedlink.next = linkedlink.next.next;
+// //same us
+// let node1 = linkedlink.next.next;
+// linkedlink.next = node1;
+// console.log(linkedlink);
+// node1 = null;
+// console.log(linkedlink);
 

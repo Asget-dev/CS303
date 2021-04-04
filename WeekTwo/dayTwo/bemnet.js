@@ -1,6 +1,7 @@
 //Question 1
 let arr=[1,50,40,3,10];
-let result=arr.filter(item=>item>20).reduce(function(sum,item){
+let result=arr.filter(item=>item>20)
+.reduce(function(sum,item){
    return sum+item;
 },0);
 console.log(result);
