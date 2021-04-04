@@ -1,11 +1,11 @@
-// function sum(num) {
-//   if (num === 0) {
-//     return 0;
-//   }else{
-//       return n + sum(num - 1);
-//   }
-// }
-// console.log(sum(100));
+function sum(num) {
+  if (num === 0) {
+    return 0;
+  }else{
+      return num + sum(num - 1);
+  }
+}
+console.log(sum(5));
 
 
 
